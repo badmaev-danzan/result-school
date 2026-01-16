@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loader__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 3rem;
+  color: #3b3b3bc1;
+}
+
+.loader__dot:nth-child(1) {
+  animation: 1s 0s ease-in-out infinite alternate dots;
+}
+
+.loader__dot:nth-child(2) {
+  animation: 1s 0.33s ease-in-out infinite alternate dots;
+}
+
+.loader__dot:nth-child(3) {
+  animation: 1s 0.66s ease-in-out infinite alternate dots;
+}
+
+.loader__dot:after {
+  content: "\2022";
+}
+
+@keyframes dots {
+  from {
+    font-size: 3rem;
+  }
+  to {
+    font-size: 6rem;
+  }
+}
