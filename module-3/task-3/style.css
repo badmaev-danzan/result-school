@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+
+  list-style: none;
+}
+
+.list__item-link {
+  color: black;
+  text-decoration: unset;
+
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.list__item-link[type="application/pdf"]::before {
+  content: "";
+  background: url("./assets/icon-pdf.svg") no-repeat center / contain;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
