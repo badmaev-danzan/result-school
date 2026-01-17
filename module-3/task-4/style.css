@@ -38,10 +38,6 @@ body {
   align-items: center;
 }
 
-.nav__item-image {
-  width: 130px;
-}
-
 .nav-item__search {
   display: flex;
   align-items: center;
@@ -125,12 +121,19 @@ body {
 }
 
 .content {
-  margin: 4rem 1rem;
+  margin: 0 1rem;
+  padding-top: 4rem;
   font-size: 1.6rem;
 }
 
+.content h1 {
+  margin: 0;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
 .content img {
-  margin: 0 1rem;
+  margin: 0.5rem 1rem;
 }
 
 .content__left-image {
